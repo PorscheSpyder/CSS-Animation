@@ -3,3 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,700&display=swap');
 
 @import url("reset.css");
+
+
+
+.bot-rotate-y:hover {
+    transform: rotateY(360deg);
+    transition: transform 2s ease-in-out;
+}
