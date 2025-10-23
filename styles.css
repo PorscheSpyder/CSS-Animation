@@ -6,7 +6,93 @@
 
 
 
+a {
+    text-decoration: none;
+}
+
+.blue-button {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #1F80FF;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+}
+
 .bot-rotate-y:hover {
     transform: rotateY(360deg);
     transition: transform 2s ease-in-out;
 }
+
+h2 {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 32px;
+    color: #010058;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.logo {
+    margin-top: 26px;
+    margin-left: 60px;
+}
+
+
+nav {
+    background-color: #1F80FF;
+    width: 1440px;
+    height: 154px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.right-nav {
+    display: flex;
+}
+
+.right-nav li {
+    display: flex;
+    align-content: center;
+    margin-left: 47px;
+}
+
+.white-button{
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #1F80FF;
+    background-color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+}
+
+
+
+
