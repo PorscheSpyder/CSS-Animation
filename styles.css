@@ -22,6 +22,7 @@ a {
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 15px;
+    margin-left: 618px;
 }
 
 .bot-rotate-y:hover {
@@ -37,6 +38,9 @@ h2 {
     line-height: 32px;
     color: #010058;
     text-decoration: none;
+    margin-left: 489px;
+    margin-top: 100px;
+    margin-bottom: 35px;
 }
 
 li {
@@ -67,6 +71,7 @@ nav ul {
     line-height: 20px;
     color: #000000;
     text-decoration: none;
+    align-items: center;
 }
 
 .right-nav {
@@ -75,8 +80,7 @@ nav ul {
 
 .right-nav li {
     display: flex;
-    align-content: center;
-    margin-left: 47px;
+    margin-left: 67px;
 }
 
 .white-button{
@@ -91,7 +95,16 @@ nav ul {
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 15px;
+    height: 20px;
+    margin-top: 40px;
 }
+
+main {
+    background-image: url("images/background.png");
+    height:1024px;
+    width: 1440px;
+}
+
 
 
 
