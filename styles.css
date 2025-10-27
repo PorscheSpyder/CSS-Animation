@@ -4,7 +4,7 @@
 
 @import url("reset.css");
 
-
+/*
 
 a {
     text-decoration: none;
@@ -105,7 +105,142 @@ main {
     width: 1440px;
 }
 
+*/
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.bot-rotate-y:hover {
+    transform: rotateY(360deg);
+    transition: transform 4s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.blue-button {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #1F80FF;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    margin-left: 618px;
+}
+ 
+@keyframes float {
+    0% {transform: translateY(0px);}
+    25% {transform: translateY(20px);}
+    50% {transform: translateY(-10px);}
+    75% {transform: translateY(10px);}
+    100% {transform: translateY(0px);}
+}
+
+.bot-float {
+    animation-name: float;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    margin-bottom: 50px;
+}
+
+.white-button{
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #1F80FF;
+    background-color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    width: 105px;
+    height: 20px;
+    margin-top: 47px;
+}
 
 
+h2 {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 32px;
+    color: #010058;
+    text-decoration: none;
+    padding-top: 350px;
+    margin-bottom: 39px;
+    margin-left: 487px;
+}
 
+li {
+    list-style: none;
+}
 
+.logo {
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+
+.left-bots {
+    width: 513px;
+    display: flex;
+    align-items: baseline;
+}
+
+.right-bots {
+    width: 416px;
+    display: flex;
+    margin-left: 250px;
+    align-items: baseline;
+}
+.bots {
+    display: flex;
+    align-items: baseline;
+    margin-top: -125px;
+}
+
+main {
+    background-image: url("images/background.png");
+    background-repeat: no-repeat;
+    height:1024px;
+    width: 1440px;
+    margin-top: -21px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    background-color: #1F80FF;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right-nav {
+    display: flex;
+    align-content: center;
+}
+
+.right-nav li {
+    align-content: center;
+    margin-right: 47px;
+}
