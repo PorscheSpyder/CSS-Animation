@@ -4,108 +4,6 @@
 
 @import url("reset.css");
 
-/*
-
-a {
-    text-decoration: none;
-}
-
-.blue-button {
-    font-family: "Audiowide", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 25px;
-    color: #ffffff;
-    background-color: #1F80FF;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 15px;
-    margin-left: 618px;
-}
-
-.bot-rotate-y:hover {
-    transform: rotateY(360deg);
-    transition: transform 2s ease-in-out;
-}
-
-h2 {
-    font-family: "Audiowide", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 25px;
-    line-height: 32px;
-    color: #010058;
-    text-decoration: none;
-    margin-left: 489px;
-    margin-top: 100px;
-    margin-bottom: 35px;
-}
-
-li {
-    list-style: none;
-}
-
-.logo {
-    margin-top: 26px;
-    margin-left: 60px;
-}
-
-
-nav {
-    background-color: #1F80FF;
-    width: 1440px;
-    height: 154px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    font-family: "Audiowide", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 20px;
-    color: #000000;
-    text-decoration: none;
-    align-items: center;
-}
-
-.right-nav {
-    display: flex;
-}
-
-.right-nav li {
-    display: flex;
-    margin-left: 67px;
-}
-
-.white-button{
-    font-family: "Audiowide", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    color: #1F80FF;
-    background-color: #ffffff;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 15px;
-    height: 20px;
-    margin-top: 40px;
-}
-
-main {
-    background-image: url("images/background.png");
-    height:1024px;
-    width: 1440px;
-}
-
-*/
 
 a {
     text-decoration: none;
@@ -123,8 +21,33 @@ body {
 
 .bot-rotate-y:hover {
     transform: rotateY(360deg);
-    transition: transform 4s ease-in-out;
+    transition: transform 3s ease-in-out;
     animation-iteration-count: infinite;
+}
+
+.bot-rotate-x:hover {
+    transform: rotateX(360deg);
+    transition: transform 3s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.bot-jump:hover {
+    animation-name: jump;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.bot-float {
+    animation-name: float;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    margin-bottom: 50px;
+}
+
+.bots {
+    display: flex;
+    align-items: baseline;
+    margin-top: -125px;
 }
 
 .blue-button {
@@ -150,28 +73,12 @@ body {
     100% {transform: translateY(0px);}
 }
 
-.bot-float {
-    animation-name: float;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
-    margin-bottom: 50px;
-}
-
-.white-button{
-    font-family: "Audiowide", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    color: #1F80FF;
-    background-color: #ffffff;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 15px;
-    width: 105px;
-    height: 20px;
-    margin-top: 47px;
+@keyframes jump {
+    0% {transform: translateY(0);}
+    30% {transform: translateY(-30px); }
+    50% { transform: translateY(0);}
+    70% {transform: translateY(-15px);}
+    100% {transform: translateY(0);}
 }
 
 
@@ -203,17 +110,6 @@ li {
     align-items: baseline;
 }
 
-.right-bots {
-    width: 416px;
-    display: flex;
-    margin-left: 250px;
-    align-items: baseline;
-}
-.bots {
-    display: flex;
-    align-items: baseline;
-    margin-top: -125px;
-}
 
 main {
     background-image: url("images/background.png");
@@ -235,6 +131,13 @@ nav {
     margin-right: auto;
 }
 
+.right-bots {
+    width: 416px;
+    display: flex;
+    margin-left: 250px;
+    align-items: baseline;
+}
+
 .right-nav {
     display: flex;
     align-content: center;
@@ -243,4 +146,22 @@ nav {
 .right-nav li {
     align-content: center;
     margin-right: 47px;
+}
+
+
+.white-button{
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #1F80FF;
+    background-color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    width: 105px;
+    height: 20px;
+    margin-top: 47px;
 }
