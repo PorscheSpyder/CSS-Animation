@@ -18,12 +18,10 @@ body {
     color: #ffffff;
     text-decoration: none;
 }
-
+  
 .bot-rotate-y:hover {
-    transform: rotateY(360deg);
-    transition: transform 3s ease-in-out;
-    animation-iteration-count: infinite;
-}
+    animation: rotateY 2s linear infinite;
+  }
 
 .bot-rotate-x:hover {
     transform: rotateX(360deg);
@@ -80,6 +78,11 @@ body {
     70% {transform: translateY(-15px);}
     100% {transform: translateY(0);}
 }
+
+@keyframes rotateY {
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(360deg);}
+  }
 
 
 h2 {
