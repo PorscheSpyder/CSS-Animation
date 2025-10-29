@@ -28,7 +28,8 @@
         <ul>
         <div class="bots">
          <div class="left-bots">
-            <li><img src="images/pruplebot.png" /></li>
+            <li><button data-modal-target="#modal" class="modal-button"> <img src=images/pruplebot.png /></button></li>
+            
             <li><img src="images/orangebot.png" class="bot-jump"/></li>
          </div>
          <div class="right-bots">
@@ -37,6 +38,21 @@
         </div>
         </div>
         </ul>
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">Hello! I'm Surge.</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-left">
+        <img src="images/head.png"/>
+    </div>
+    <div class="modal-right">
+        <p>Here at Bot Builder, your only limit is your imagination. After clicking the Build a Bot button, you will be guided through the design process and be able to choose </br>many shapes, sizes, colors and much more! Share your creations with others and browse what other people have made. Have fun creating!</p>
+    </div>
+      </div>
+    </div>
+    <div id="overlay"></div>
     </main>
   </body>
 </html>
